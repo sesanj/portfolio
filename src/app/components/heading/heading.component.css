@@ -1,0 +1,35 @@
+.projects-header {
+  margin-bottom: 80px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(90deg, #800080, #4b0082);
+    margin: 30px auto 0;
+    border-radius: 2px;
+  }
+
+  .tag-line span {
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #9d009d, #7f18c9, #470377);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: #222;
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+}

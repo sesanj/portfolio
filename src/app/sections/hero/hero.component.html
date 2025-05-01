@@ -1,0 +1,36 @@
+<section class="hero">
+  <div class="hero-content">
+    <img src="myPicture.jpeg" alt="Profile Photo" class="profile-photo" />
+    <h1 @fadeIn>Hi, I'm <span class="name">Sesan</span></h1>
+    <p @fadeIn class="typing-text">A <span class="typed-text"></span></p>
+    <p @fadeInDelay class="hero-description">
+      I design and develop highly functional, modern, user-friendly web experiences with a touch of simplicity and
+      elegance.<br> <span>Whatever you can think, I can develop.</span>
+    </p>
+    <div @fadeInDelay2 class="buttons">
+      <a href="projects" class="button1" (click)="scrollToProjects()">View My Projects</a>
+      <a href="#" class="button2">Download Resume</a>
+    </div>
+  </div>
+
+  <div class="floating-container">
+    <div class="icon-wrapper orbit1">
+      <img src="box.png" class="floating-icon" />
+    </div>
+    <div class="icon-wrapper orbit2">
+      <img src="terminal.png" class="floating-icon" />
+    </div>
+    <div class="icon-wrapper orbit3">
+      <img src="code1.png" class="floating-icon" />
+    </div>
+    <div class="icon-wrapper orbit4">
+      <img src="code.png" class="floating-icon" />
+    </div>
+  </div>
+
+
+  <div [class.shooting-star]="shootStar"></div>
+
+
+
+</section>

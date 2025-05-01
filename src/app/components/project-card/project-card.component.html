@@ -1,0 +1,20 @@
+<div class="project-card">
+  <div class="project-image">
+    <img [src]="project.image" alt="Project Screenshot">
+  </div>
+  <div class="project-content">
+    <h1><span>{{project.title}}</span></h1>
+    <p class="project-description">
+      {{project.description}}
+    </p>
+    <div class="project-tags">
+      @for(tag of project.tech; track $index){
+      <span>#{{tag}}</span>
+      }
+    </div>
+    <div class="button">
+      <a href="#" class="project-link">View Project <span class="arrow"><img src="arrow.png" alt=""></span></a><span><a
+          [href]="project.github">Github</a><img src="github.png" alt="github"></span>
+    </div>
+  </div>
+</div>

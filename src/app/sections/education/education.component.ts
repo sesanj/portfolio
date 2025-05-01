@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+import { HeadingComponent } from '../../components/heading/heading.component';
+import { Heading } from '../../Models/models';
+
+@Component({
+  selector: 'app-education',
+  standalone: true,
+  imports: [HeadingComponent],
+  templateUrl: './education.component.html',
+  styleUrl: './education.component.css',
+})
+export class EducationComponent {
+  heading: Heading = {
+    tag: 'LEARNED FROM THE BEST',
+    title: 'Education Background',
+    description: "Here's a brief overview of my educational background",
+  };
+}
