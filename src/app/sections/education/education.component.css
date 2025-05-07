@@ -64,13 +64,30 @@
   transition: ease 0.5s;
 }
 
+.photo-wrapper {
+  position: relative;
+  width: fit-content;
+  z-index: 2;
+  background-color: green;
+}
+
+.photo-wrapper.left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.photo-wrapper.right {
+  position: absolute;
+  top: 18%;
+  right: 15%;
+}
+
 .grad-photo:hover {
   filter: grayscale(10%);
 }
 
 .grad-photo.left {
-  top: 50%;
-  left: 0;
   transform: rotate(-10deg);
 }
 
@@ -79,8 +96,6 @@
 }
 
 .grad-photo.right {
-  top: 18%;
-  right: 0;
   transform: rotate(10deg);
 }
 
@@ -110,7 +125,7 @@
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 

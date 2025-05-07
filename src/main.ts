@@ -3,6 +3,7 @@ import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { importProvidersFrom } from '@angular/core';
+import 'aos/dist/aos.css';
 
 bootstrapApplication(AppComponent, {
   providers: [importProvidersFrom(BrowserAnimationsModule)],

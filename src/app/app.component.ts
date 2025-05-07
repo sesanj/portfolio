@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeroComponent } from './sections/hero/hero.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
 import { EducationComponent } from './sections/education/education.component';
 import { AboutComponent } from './sections/about/about.component';
 import { ContactComponent } from './sections/contact/contact.component';
+import { SkillsComponent } from './sections/skills/skills.component';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -14,10 +16,22 @@ import { ContactComponent } from './sections/contact/contact.component';
     EducationComponent,
     AboutComponent,
     ContactComponent,
+    SkillsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio-website';
+
+  ngOnInit() {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }
+
+  ngAfterViewInit() {
+    AOS.refresh();
+  }
 }
