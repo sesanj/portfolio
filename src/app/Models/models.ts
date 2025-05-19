@@ -12,3 +12,14 @@ export interface ProjectCard {
   url?: string;
   image: string;
 }
+
+export interface WorkCard {
+  company: string;
+  logo: string;
+  role: string;
+  period: string;
+  location: string;
+  description: string[];
+  website: string;
+  image: string;
+}

@@ -5,6 +5,7 @@ import { EducationComponent } from './sections/education/education.component';
 import { AboutComponent } from './sections/about/about.component';
 import { ContactComponent } from './sections/contact/contact.component';
 import { SkillsComponent } from './sections/skills/skills.component';
+import { WorkComponent } from './sections/work/work.component';
 import * as AOS from 'aos';
 
 @Component({
@@ -17,6 +18,7 @@ import * as AOS from 'aos';
     AboutComponent,
     ContactComponent,
     SkillsComponent,
+    WorkComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

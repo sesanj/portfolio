@@ -17,6 +17,7 @@ export class SkillsComponent {
     title: 'Tech, Tools & Skills',
     description:
       'A collection of languages, frameworks, and tools that power my development workflow and projects.',
+    // 'From backend to frontend, discover the range of tools, technologies, and skills I use to build efficient digital products.'
   };
 
   skillCategories = [

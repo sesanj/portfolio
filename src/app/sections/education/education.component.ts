@@ -13,6 +13,7 @@ export class EducationComponent {
   heading: Heading = {
     tag: 'LEARNED FROM THE BEST',
     title: 'Education Background',
-    description: "Here's a brief overview of my educational background",
+    description:
+      'A brief overview of my educational background as a Computer Engineer and Programmer ',
   };
 }

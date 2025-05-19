@@ -1,0 +1,146 @@
+.about-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 40px; */
+}
+
+.about-image {
+  width: 30%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 70%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  filter: grayscale(70%);
+  transition: ease-in-out 1s;
+}
+
+.about-image img:hover {
+  filter: grayscale(20%);
+}
+
+.about-content {
+  width: 70%;
+}
+
+.about-content .bio {
+  position: relative;
+  font-size: 16px;
+  font-style: italic;
+  color: #444;
+  line-height: 1.8;
+  padding: 30px 40px;
+  background: #f9f9f9;
+  border-left: 5px solid #800080;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.bio p {
+  flex: 1 1 100%;
+  margin: 0;
+}
+
+.quote-icon {
+  flex-shrink: 0;
+}
+
+.quote-left {
+  align-self: flex-start;
+}
+
+.quote-right {
+  align-self: flex-end;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.about-tags > span {
+  padding: 12px 18px;
+  color: #666;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: ease-in-out 0.4s;
+}
+
+.about-tags > span:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transform: rotate(10deg);
+}
+
+span > span {
+  margin-left: 5px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 8px;
+  background: linear-gradient(90deg, #800080, #4b0082);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.button img {
+  width: 18px;
+  height: 18px;
+  transition: ease-in-out 0.2s;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #4b0082, #800080, #6a0dad);
+  transform: scale(1.03);
+}
+
+.button:hover img {
+  transform: translateX(8px);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-content {
+    flex: 1 1 100%;
+  }
+
+  .about-content .bio {
+    text-align: left;
+  }
+
+  .about-tags {
+    justify-content: center;
+  }
+}

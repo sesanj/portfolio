@@ -1,0 +1,33 @@
+<section class="experience-section">
+  <app-heading [heading]="heading"></app-heading>
+
+  @for(work of workExperiences ; track $index){
+
+  <div class="experience-container">
+    <!-- Content Left -->
+    <div class="experience-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="company-logo">
+        <img [src]="work.logo" [alt]="work.company + ' Logo'" />
+        <p class="badge">4-Month Internship</p>
+      </div>
+
+
+      <h3>{{ work.company }}</h3>
+      <p class="role">{{ work.role }} | {{ work.location }} | {{ work.period }}</p>
+      <ul class="experience-points">
+        @for(info of work.description ; track $index){
+        <li>{{ info }}</li>
+        }
+
+      </ul>
+      <a [href]="work.website" class="website-btn" target="_blank">Visit Website <span class="arrow"><img
+            src="arrow.png" alt=""></span></a>
+    </div>
+
+    <!-- Screenshot Right -->
+    <div class="experience-image" data-aos="fade-up" data-aos-delay="250">
+      <img [src]="work.image" [alt]="work.company + ' Website Image'" />
+    </div>
+  </div>
+  }
+</section>
