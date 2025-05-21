@@ -35,16 +35,15 @@ export class SkillsComponent {
         { icon: 'devicon-css3-plain', name: 'CSS3' },
       ],
     },
-
     {
-      name: 'AI Tools 💡',
-      colorClass: 'category-ai',
+      name: 'Frameworks & Libraries',
+      colorClass: 'category-frameworks',
       skills: [
-        { icon: 'devicon-chatgpt-plain', name: 'ChatGPT' },
-        { icon: 'devicon-grok-plain', name: 'Grok' },
-        { icon: 'devicon-deepseek-plain', name: 'DeepSeek' },
-        { icon: 'devicon-copilot-plain', name: 'GitHub Copilot' },
-        { icon: 'devicon-lovable-plain', name: 'Lovable' },
+        { icon: 'devicon-angular-plain', name: 'Angular' },
+        { icon: 'devicon-laravel-plain', name: 'Laravel' },
+        { icon: 'devicon-express-original', name: 'Express.js' },
+        { icon: 'devicon-java-plain', name: 'JavaFX' },
+        { icon: 'devicon-nodejs-plain', name: 'Node.js' },
       ],
     },
 
@@ -67,14 +66,14 @@ export class SkillsComponent {
     },
 
     {
-      name: 'Frameworks & Libraries',
-      colorClass: 'category-frameworks',
+      name: 'AI Tools 💡',
+      colorClass: 'category-ai',
       skills: [
-        { icon: 'devicon-angular-plain', name: 'Angular' },
-        { icon: 'devicon-laravel-plain', name: 'Laravel' },
-        { icon: 'devicon-express-original', name: 'Express.js' },
-        { icon: 'devicon-java-plain', name: 'JavaFX' },
-        { icon: 'devicon-nodejs-plain', name: 'Node.js' },
+        { icon: 'devicon-chatgpt-plain', name: 'ChatGPT' },
+        { icon: 'devicon-grok-plain', name: 'Grok' },
+        { icon: 'devicon-deepseek-plain', name: 'DeepSeek' },
+        { icon: 'devicon-copilot-plain', name: 'GitHub Copilot' },
+        { icon: 'devicon-lovable-plain', name: 'Lovable' },
       ],
     },
   ];

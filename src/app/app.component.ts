@@ -7,6 +7,7 @@ import { ContactComponent } from './sections/contact/contact.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { WorkComponent } from './sections/work/work.component';
 import * as AOS from 'aos';
+import { TestimonialComponent } from './sections/testimonial/testimonial.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ import * as AOS from 'aos';
     ContactComponent,
     SkillsComponent,
     WorkComponent,
+    TestimonialComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<section class="contact-section" data-aos="fade-up">
+  <app-heading [heading]="heading"></app-heading>
+
+  <div class="contact-container">
+    <div class="form">
+      <div class="contact-info">
+        <h3>Connect with me:</h3>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="color: rgb(53, 122, 241);">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:popoolasesan4@gmail.com" style="color: red;">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/+14162626112" target="_blank" style="color: green; font-size: 20px;">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="tel:+14162626112" target="_blank" style="color: rgb(97, 97, 97);">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
+        <input type="text" placeholder="Your Name" required name="name" [(ngModel)]="formData.name">
+        <input type="email" placeholder="Your Email" required name="email" [(ngModel)]="formData.email">
+        <textarea rows="5" placeholder="Your Message" required name="message" [(ngModel)]="formData.message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5901.772580544156!2d-83.03082432309039!3d42.302291671198525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2cf8feabae1f%3A0x2f8adfaa01a3210e!2s1400%20Ouellette%20Ave%2C%20Windsor%2C%20ON%20N8X%204T4!5e0!3m2!1sen!2sca!4v1747713654192!5m2!1sen!2sca"
+        width="100%" height="350" style="border:0;" allowfullscreen="true"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>

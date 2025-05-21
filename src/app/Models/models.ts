@@ -23,3 +23,10 @@ export interface WorkCard {
   website: string;
   image: string;
 }
+
+export interface Testimony {
+  image: string;
+  name: string;
+  tag: string;
+  description: string;
+}

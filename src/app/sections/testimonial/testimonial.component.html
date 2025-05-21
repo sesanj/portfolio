@@ -1,0 +1,42 @@
+<section class="testimonial-section" data-aos="fade-up">
+  <app-heading [heading]="heading"></app-heading>
+
+  <div class="testimonial-slider">
+    <div class="testimonial-track">
+      <!-- Repeat this div for multiple testimonials -->
+      @for(data of testimonials; track $index){
+      <div class="testimonial-card">
+        <div class="header">
+          <img [src]="'avatars/' + data.image" alt="Testimonial Avatar">
+          <div>
+            <h4>{{data.name}}</h4>
+            <h3>{{data.tag}}</h3>
+          </div>
+        </div>
+        <p>{{data.description}}</p>
+      </div>
+      }
+
+      @for(data of testimonials; track $index){
+      <div class="testimonial-card">
+        <div class="header">
+          <img [src]="'avatars/' + data.image" alt="Testimonial Avatar">
+          <div>
+            <h4>{{data.name}}</h4>
+            <h3>{{data.tag}}</h3>
+          </div>
+        </div>
+        <p>{{data.description}}</p>
+      </div>
+
+      }
+
+
+
+      <!-- Duplicate cards for infinite loop illusion -->
+    </div>
+
+    <div class="fade fade-left"></div>
+    <div class="fade fade-right"></div>
+  </div>
+</section>
