@@ -1,0 +1,39 @@
+.container {
+  padding: 25px 0px;
+  background: linear-gradient(90deg, #800080, #4b0082);
+  color: white;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content > p {
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  gap: 50px;
+}
+
+.links div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+}
