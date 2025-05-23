@@ -9,6 +9,7 @@ import { WorkComponent } from './sections/work/work.component';
 import * as AOS from 'aos';
 import { TestimonialComponent } from './sections/testimonial/testimonial.component';
 import { FooterComponent } from './sections/footer/footer.component';
+import { HeaderComponent } from './sections/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -23,21 +24,20 @@ import { FooterComponent } from './sections/footer/footer.component';
     WorkComponent,
     TestimonialComponent,
     FooterComponent,
+    HeaderComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
-  title = 'portfolio-website';
-
   ngOnInit() {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
+    // AOS.init({
+    //   duration: 1000,
+    //   once: true,
+    // });
   }
 
-  ngAfterViewInit() {
-    AOS.refresh();
-  }
+  // ngAfterViewInit() {
+  //   AOS.refresh();
+  // }
 }

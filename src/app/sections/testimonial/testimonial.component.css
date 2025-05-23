@@ -16,7 +16,7 @@
 .testimonial-track {
   display: flex;
   gap: 30px;
-  animation: slideLeft 30s linear infinite;
+  animation: slideLeft 60s linear infinite;
   width: max-content;
 }
 

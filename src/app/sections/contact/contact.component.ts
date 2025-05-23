@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Heading } from '../../Models/models';
 import { HeadingComponent } from '../../components/heading/heading.component';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { FormsModule } from '@angular/forms';
 
 @Component({

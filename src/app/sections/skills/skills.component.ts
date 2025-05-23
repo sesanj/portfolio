@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 import { HeadingComponent } from '../../components/heading/heading.component';
 import { Heading } from '../../Models/models';
 import { NgFor } from '@angular/common';

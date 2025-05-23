@@ -2,8 +2,6 @@
   padding: 150px 0;
   background: #fff;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.8s ease;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
@@ -28,11 +26,7 @@
   border-radius: 16px;
   width: 48%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  /* transition: 0.3s ease; */
-}
-
-.aos-animate:hover {
-  transition: none;
+  transition: 0.5s ease-in-out;
 }
 
 .skill-category:nth-child(3),
@@ -42,7 +36,6 @@
 
 .skill-category:hover {
   transform: translateY(-10px);
-  transition: 0.5s ease-in-out !important;
 }
 
 .skill-category h3 {
@@ -103,17 +96,17 @@
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   text-align: left;
+  transition: 0.5s ease-in-out;
 }
 
 .soft-skills-section:hover {
   transform: translateY(-10px);
-  transition: 0.5s ease-in-out;
 }
 
 .soft-skills-section h3 {
   font-size: 22px;
   margin-bottom: 30px;
-  color: #4b0082;
+  color: #9332d8;
 }
 
 .soft-skill {
@@ -141,7 +134,7 @@
   width: 0;
 }
 
-.soft-skills-section.aos-animate .progress {
+.soft-skills-section .progress {
   animation: growBar 2s forwards;
 }
 

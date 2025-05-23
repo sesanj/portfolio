@@ -1,11 +1,11 @@
-<section class="skills-section" data-aos="fade-up">
+<section class="skills-section" id="skills">
   <app-heading [heading]="heading"></app-heading>
 
   <div class="skills-container">
     <div class="coding">
       @for(category of skillCategories; track $index){
 
-      <div class="skill-category" [ngClass]="category.colorClass" data-aos="fade-up">
+      <div class="skill-category" [ngClass]="category.colorClass">
         <h3>{{ category.name }}</h3>
         <div class="skills">
           <div *ngFor="let skill of category.skills" class="skill-item">
@@ -18,7 +18,7 @@
       }
 
     </div>
-    <div class="soft-skills-section" data-aos="fade-up">
+    <div class="soft-skills-section">
       <h3>Soft Skills</h3>
       <div class="soft-skill" *ngFor="let skill of softSkills">
         <div class="skill-label">

@@ -89,13 +89,6 @@ export class HeroComponent {
     setTimeout(() => this.typeText(), delay);
   }
 
-  scrollToProjects() {
-    const projectsSection = document.getElementById('projects');
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
   shoot() {
     setInterval(() => {
       if (this.shootStar) {
