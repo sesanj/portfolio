@@ -160,6 +160,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .view-cert:hover {
@@ -197,4 +198,10 @@
   font-size: 14px;
   color: #333;
   line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .photo-wrapper {
+    display: none;
+  }
 }

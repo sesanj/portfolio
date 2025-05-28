@@ -4,13 +4,18 @@ export interface Heading {
   description: string;
 }
 
-export interface ProjectCard {
+export interface ProjectInfo {
   title: string;
-  description: string;
+  shortDescription: string;
   tech: string[];
-  github: string;
-  url?: string;
-  image: string;
+  cardImage: string;
+  images: string[];
+  techStack: { name: string; icon: string }[];
+  stats: { lines: string; team: string; duration: string; commits: string };
+  longDescription: string;
+  teamMembers: { name: string; role: string; photo: string }[];
+  contribution: { role: string; tasks: string[] };
+  links: { website?: string; github: string };
 }
 
 export interface WorkCard {

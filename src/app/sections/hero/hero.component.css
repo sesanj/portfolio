@@ -5,8 +5,8 @@
   min-height: 100vh;
   text-align: center;
   padding: 32px;
-  width: 1400px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1300px;
   margin: auto;
 
   .hero-content {
@@ -221,9 +221,42 @@
   }
 }
 
-@media (max-width: 600px) {
+/* Tablet adjustments */
+@media (max-width: 1024px) {
   .floating-container {
-    width: 400px;
-    height: 400px;
+    display: none;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .hero {
+    padding: 25px;
+
+    .hero-content {
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        border: 3px solid #800080;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      .typing-text {
+        font-size: 22px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 16px;
   }
 }

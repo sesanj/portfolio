@@ -1,0 +1,114 @@
+<div class="wrapper" [class.showInfo]="displayProjectInfo">
+  <div class="project-details">
+    <!-- Image and Sketch Toggle -->
+    <div class="media-section">
+      <div class="nav">
+        <h1>{{projectInfo.title}}</h1>
+        <button (click)="close()">X</button>
+      </div>
+
+      <div class="media-display">
+        <div class="images" [style.transform]="getTransform">
+          @for(image of projectInfo.images; track image){
+          <div>
+            <img [src]="image" [alt]="projectInfo.title" />
+          </div>
+          }
+        </div>
+        <div class="imageButtons">
+          <div class="prev">
+            <button (click)="prevSlide()" class="mobileButton">&#10094;</button>
+          </div>
+          <div class="next">
+            <button (click)="nextSlide()" class="mobileButton">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+
+      <!-- Quick Stats -->
+      <h3>Project Stats</h3>
+      <div class="quick-stats">
+        <div class="stat">
+          <i class="fas fa-code"></i>
+          <span>{{projectInfo.stats.lines}}+ Lines of Codes</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-clock"></i>
+          <span>{{projectInfo.stats.duration}} Duration</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-users"></i>
+          <span>{{projectInfo.stats.team}} Team Members</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-upload"></i>
+          <span>{{projectInfo.stats.commits}}+ Commits</span>
+        </div>
+      </div>
+
+      <!-- Project Description -->
+      <div class="description">
+        <h3>Project Overview</h3>
+        <p>{{ projectInfo.longDescription }}</p>
+
+        <h4>Tech Stack:</h4>
+        <div class="techStack">
+          @for(tech of projectInfo.techStack; track $index){
+          <div class="tech">
+            <i [class]="tech.icon"></i>
+            {{ tech.name }}
+          </div>
+          }
+
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Team Members -->
+      <div class="team-members">
+        <h3>Team Members</h3>
+        <div class="team">
+          @for(member of projectInfo.teamMembers; track $index){
+          <div class="member">
+            <img [src]="member.photo" alt="Member Photo" />
+            <div>
+              <h4>{{ member.name }}</h4>
+              <p>{{ member.role }}</p>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+
+      <!-- Your Contribution -->
+      <div class="my-contribution">
+        <h3>My Role & Contribution</h3>
+        <p><strong>Role:</strong> {{projectInfo.contribution.role}}</p>
+        <ul>
+          @for(task of projectInfo.contribution.tasks; track $index){
+          <li>{{task}}</li>
+          }
+        </ul>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="project-links">
+        @if(projectInfo.links.website){
+        <a [href]="projectInfo.links.website" target="_blank" class="btn">View Site</a>
+        }
+        @if(projectInfo.links.github){
+        <a [href]="projectInfo.links.github" target="_blank" class="btn">View Code</a>
+        }
+      </div>
+
+    </div>
+
+  </div>
+</div>
