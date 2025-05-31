@@ -17,6 +17,6 @@ export class WorkComponent {
     tag: 'WORK EXPERIENCE',
     title: 'Professional Experience',
     description:
-      'A highlight of my internship experience where I contributed to building and maintaining a business website for Daratan Foods LTD in Georgia.',
+      'A highlight of my internship experience where I contributed to building and maintaining a business website.',
   };
 }

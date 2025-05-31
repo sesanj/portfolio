@@ -1,6 +1,7 @@
 .projects-header {
   margin-bottom: 80px;
   text-align: center;
+  /* padding: 0px 16px; */
 
   &::after {
     content: "";
@@ -34,5 +35,39 @@
     font-size: 18px;
     max-width: 800px;
     line-height: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects-header {
+    &::after {
+      height: 4px;
+      margin: 20px auto 0;
+    }
+
+    .tag-line span {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .projects-header {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  h2 {
+    font-size: 26px !important;
   }
 }

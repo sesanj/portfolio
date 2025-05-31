@@ -41,7 +41,7 @@
 }
 
 .education-section {
-  padding: 150px 0;
+  padding: 150px 20px;
   background: #f9f9f9;
   width: 100%;
 }
@@ -68,7 +68,6 @@
   position: relative;
   width: fit-content;
   z-index: 2;
-  background-color: green;
 }
 
 .photo-wrapper.left {
@@ -200,8 +199,95 @@
   line-height: 1.5;
 }
 
-@media (max-width: 600px) {
+.mobilePhoto {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .dot span {
+    display: none;
+  }
+
+  .degree-card.left {
+    margin-right: 55%;
+  }
+
+  .degree-card.right {
+    margin-left: 55%;
+  }
+
+  .degree-card h2 {
+    font-size: 20px;
+  }
+
+  .education-section {
+    padding: 100px 20px;
+  }
+
+  .grad-photo {
+    width: 150px;
+  }
+
+  .photo-wrapper.left {
+    left: 5%;
+  }
+
+  .photo-wrapper.right {
+    right: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .photo-wrapper.right {
+    top: 0%;
+    right: 25%;
+  }
+}
+
+@media (max-width: 500px) {
+  .education-section {
+    padding: 100px 16px;
+  }
+
+  .timeline {
+    display: none;
+  }
+  .degree-card.left {
+    margin-right: 0%;
+  }
+
+  .degree-card.right {
+    margin-left: 0%;
+  }
+
   .photo-wrapper {
     display: none;
+  }
+
+  .mobilePhoto {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+      width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.338);
+
+      filter: grayscale(60%);
+    }
+  }
+
+  .degree-card h2 {
+    font-size: 18px;
+  }
+
+  .degree-card h4 {
+    font-size: 14px;
+  }
+
+  .view-cert {
+    padding: 8px 16px;
+    font-size: 15px;
   }
 }

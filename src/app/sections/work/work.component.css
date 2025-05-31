@@ -1,5 +1,5 @@
 .experience-section {
-  padding: 150px 0;
+  padding: 150px 20px;
   background: #ffffff;
   text-align: center;
   width: 100%;
@@ -128,8 +128,9 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .experience-container {
+    margin-top: 0px;
     flex-direction: column;
     gap: 30px;
   }
@@ -139,10 +140,6 @@
     width: 100%;
   }
 
-  .experience-content {
-    text-align: center;
-  }
-
   .experience-points {
     text-align: left;
     margin-left: 0;
@@ -150,5 +147,15 @@
 
   .company-logo {
     margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .experience-section {
+    padding: 100px 16px;
+  }
+
+  .experience-content h3 {
+    font-size: 24px;
   }
 }

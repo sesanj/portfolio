@@ -16,7 +16,7 @@ export class ContactComponent {
     tag: 'Contact Me',
     title: 'Available For Hire',
     description:
-      "Ready to bring your next project or an already existing project to life? Let's connect and discuss how I can help you achieve your goals.",
+      "Ready to bring your next project to life? Let's connect and discuss how I can help you achieve your goals.",
   };
 
   formData = {

@@ -16,7 +16,7 @@ export class ProjectsComponent {
     tag: 'REAL-WORLD RESULTS',
     title: 'Recent Projects',
     description:
-      'Here are some of my recently completed projects, crafted with obsession for clean, performant code',
+      'Here are some of my recently completed projects, crafted with obsession for clean, user experience.',
   };
 
   projects: ProjectInfo[] = Projects;

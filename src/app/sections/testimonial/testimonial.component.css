@@ -99,8 +99,8 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .testimonial-card {
-    min-width: 250px;
+@media (max-width: 500px) {
+  .testimonial-section {
+    padding: 100px 16px;
   }
 }

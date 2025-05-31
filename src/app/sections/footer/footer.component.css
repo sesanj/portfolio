@@ -37,3 +37,37 @@ img {
   width: 16px;
   height: 16px;
 }
+
+/* Responsive */
+@media (max-width: 1050px) {
+  .container {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .links div {
+    justify-content: center;
+  }
+}

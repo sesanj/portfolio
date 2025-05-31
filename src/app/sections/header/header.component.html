@@ -12,9 +12,25 @@
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#reviews">Testimonials</a>
-      <a href="#contact">Contact Me</a>
+      <a href="#contact" class="contactMe">Contact Me</a>
     </div>
 
+    <img src="menu.png" alt="menu icon" class="menu" (click)="open()">
+
+  </div>
+</div>
+<div class="mobileMenu" [class.openMenu]="openMenu" (click)="close()">
+  <div class="mobileLinks" [class.openMenu]="openMenu" (click)="stop($event)">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#reviews">Testimonials</a>
+    <a href="#contact" class="contactMe">Contact Me</a>
+    <div class="close" (click)="close()">
+      <p>X</p>
+    </div>
   </div>
 
 </div>
