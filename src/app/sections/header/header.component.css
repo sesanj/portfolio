@@ -65,10 +65,16 @@ a:hover {
 .menu {
   display: none;
 }
+.mobileMenu {
+  display: none;
+}
 
 @media (max-width: 800px) {
   .links {
     display: none;
+  }
+  .mobileMenu {
+    display: block;
   }
   .menu {
     display: block;
@@ -99,7 +105,7 @@ a:hover {
   .mobileLinks {
     position: fixed;
     padding: 80px 30px;
-    width: 60%;
+    width: 40%;
     top: 0;
     bottom: 0;
     right: 0;
@@ -134,5 +140,17 @@ a:hover {
   .contactMe {
     width: fit-content;
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobileLinks {
+    width: 60%;
+  }
+}
+
+@media (max-width: 400px) {
+  .mobileLinks {
+    width: 80%;
   }
 }
