@@ -12,14 +12,14 @@ export class ProjectInfoComponent {
   @Input({ required: true }) projectInfo!: ProjectInfo;
 
   @Input({ required: true }) displayProjectInfo!: boolean;
-  @Output() productIsClosed = new EventEmitter<boolean>();
+  @Output() projectIsClosed = new EventEmitter<boolean>();
 
   currentIndex: number = 0;
 
   close() {
     this.displayProjectInfo = false;
 
-    this.productIsClosed.emit(false);
+    this.projectIsClosed.emit(true);
   }
 
   get getTransform() {

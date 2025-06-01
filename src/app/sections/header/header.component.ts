@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ContactService } from '../../contact.service';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   openMenu: boolean = false;
+  contactService = inject(ContactService);
 
   open() {
     this.openMenu = true;
@@ -16,6 +18,10 @@ export class HeaderComponent {
 
   close() {
     this.openMenu = false;
+  }
+
+  closeInfo() {
+    this.contactService.displayInfo = false;
   }
 
   stop(event: Event) {

@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { ProjectInfo } from '../../Models/models';
 import { ProjectInfoComponent } from '../project-info/project-info.component';
+import { ContactService } from '../../contact.service';
 
 @Component({
   selector: 'app-project-card',
@@ -11,16 +12,15 @@ import { ProjectInfoComponent } from '../project-info/project-info.component';
 })
 export class ProjectCardComponent {
   @Input({ required: true }) project!: ProjectInfo;
-  displayInfo: boolean = false;
+  contactService = inject(ContactService);
 
   display() {
-    console.log('Is displaying: ', this.displayInfo);
-    this.displayInfo = true;
-
-    console.log('After Click: ', this.displayInfo);
+    this.contactService.displayInfo = true;
   }
 
-  productIsClosed(event: boolean) {
-    this.displayInfo = event;
+  projectIsClosed(event: boolean) {
+    if (event === true) {
+      this.contactService.displayInfo = false;
+    }
   }
 }
