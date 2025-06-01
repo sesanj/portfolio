@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { ProjectInfo } from '../../Models/models';
+import { ProjectService } from '../../project.service';
 
 @Component({
   selector: 'app-project-info',
@@ -12,14 +13,12 @@ export class ProjectInfoComponent {
   @Input({ required: true }) projectInfo!: ProjectInfo;
 
   @Input({ required: true }) displayProjectInfo!: boolean;
-  @Output() projectIsClosed = new EventEmitter<boolean>();
+  projectService = inject(ProjectService);
 
   currentIndex: number = 0;
 
   close() {
-    this.displayProjectInfo = false;
-
-    this.projectIsClosed.emit(true);
+    this.projectService.displayInfo = false;
   }
 
   get getTransform() {
