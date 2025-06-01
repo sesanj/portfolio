@@ -226,3 +226,19 @@ h3 {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+/* Responsive */
+@media (max-width: 800px) {
+  .nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    width: 100%;
+  }
+
+  .content {
+    padding: 30px 20px;
+  }
+}

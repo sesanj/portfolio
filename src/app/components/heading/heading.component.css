@@ -1,7 +1,6 @@
 .projects-header {
   margin-bottom: 80px;
   text-align: center;
-  /* padding: 0px 16px; */
 
   &::after {
     content: "";
@@ -33,7 +32,7 @@
     margin: auto;
     margin-top: 16px;
     font-size: 18px;
-    max-width: 800px;
+    max-width: 900px;
     line-height: 28px;
   }
 }

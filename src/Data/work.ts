@@ -8,7 +8,7 @@ export const WorkData: WorkCard[] = [
     location: 'Tbilisi, Georgia',
     description: [
       "Worked with a team to develop the company's website to improve user experience.",
-      'Collaborated with the marketing team to implement new product pages and promotional banners.',
+      'Collaborated with the marketing team to implement new promotional banners.',
       'Optimized website for mobile responsiveness and SEO best practices.',
       'Assisted in debugging and resolving technical issues on live site.',
     ],
