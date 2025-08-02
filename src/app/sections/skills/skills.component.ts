@@ -44,6 +44,7 @@ export class SkillsComponent {
         { icon: 'devicon-express-original', name: 'Express.js' },
         { icon: 'devicon-java-plain', name: 'JavaFX' },
         { icon: 'devicon-nodejs-plain', name: 'Node.js' },
+        { icon: 'devicon-.NET-plain', name: '.NET' },
       ],
     },
 

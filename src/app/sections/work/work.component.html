@@ -6,27 +6,35 @@
   <div class="experience-container">
     <!-- Content Left -->
     <div class="experience-content">
-      <div class="company-logo">
+      <!-- <div class="company-logo">
         <img [src]="work.logo" [alt]="work.company + ' Logo'" />
-        <p class="badge">4-Month Internship</p>
+      </div> -->
+
+
+      <h3>{{work.role}}</h3>
+      <h4>{{work.company }}</h4>
+      <p class="role">{{ work.location }} | {{ work.period }}</p>
+      <div class="techStack">
+        @for(tech of work.techStack; track $index){
+        <div class="tech">
+          <i [class]="tech.icon"></i>
+          {{tech.name}}
+        </div>
+        }
       </div>
 
-
-      <h3>{{ work.company }}</h3>
-      <p class="role">{{ work.role }} | {{ work.location }} | {{ work.period }}</p>
-      <ul class="experience-points">
-        @for(info of work.description ; track $index){
-        <li>{{ info }}</li>
-        }
-
-      </ul>
+      @if(work.website){
       <a [href]="work.website" class="website-btn" target="_blank">Visit Website <span class="arrow"><img
             src="arrow.png" alt=""></span></a>
+
+      }
     </div>
 
     <!-- Screenshot Right -->
-    <div class="experience-image">
-      <img [src]="work.image" [alt]="work.company + ' Website Image'" />
+    <div class="experience-points">
+      @for(info of work.description ; track $index){
+      <p>{{ info }}</p>
+      }
     </div>
   </div>
   }

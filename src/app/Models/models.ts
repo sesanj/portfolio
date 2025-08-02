@@ -20,13 +20,13 @@ export interface ProjectInfo {
 
 export interface WorkCard {
   company: string;
-  logo: string;
+  // logo: string;
   role: string;
   period: string;
   location: string;
   description: string[];
   website: string;
-  image: string;
+  techStack: { name: string; icon: string }[];
 }
 
 export interface Testimony {
