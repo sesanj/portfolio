@@ -2,7 +2,7 @@ import { WorkCard } from '../app/Models/models';
 
 export const WorkData: WorkCard[] = [
   {
-    company: 'Tareti LTD - (Hybrid)',
+    company: 'Tare Tee Global Services - (Hybrid)',
     role: 'Web Developer',
     period: 'Nov 2022 - Dec 2023',
     location: 'Abuja, Nigeria',
